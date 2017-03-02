@@ -16,7 +16,7 @@
 			 </div>
 			<div id="navbar"><?php //print render($page['navbar']);?>
 				<nav id="main-menu"  role="navigation">
-					<a class="nav-toggle" href="#"><?php print t("Menu"); ?></a>
+					<a class="nav-toggle" href="#"><?php print t("Menu"); ?> &#8801;</a>
 					<div class="menu-navigation-container">
 					  <?php
 					  if (module_exists('i18n_menu')) {

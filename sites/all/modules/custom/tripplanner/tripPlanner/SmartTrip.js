@@ -192,6 +192,10 @@ function ShowTpForm(module) {
             document.getElementById('divCP').style.backgroundColor = '#00C521';
             document.getElementById('divSIA').style.backgroundColor = '#FFFFFF';
             document.getElementById('divSCH').style.backgroundColor = '#FFFFFF';
+			
+			document.getElementById("divCP").classList.add("selectedStatusTab");
+			document.getElementById("divSIA").classList.remove("selectedStatusTab");
+			document.getElementById("divSCH").classList.remove("selectedStatusTab");
 
             document.getElementById('divCP').style.color = '#FFFFFF';
             document.getElementById('divSIA').style.color = '#000000';
@@ -209,6 +213,7 @@ function ShowTpForm(module) {
             document.getElementById("divLeaveArr").style.display = "block";
 
             document.getElementById("SpanAdv").style.display = "inline";
+			
 
             break;
         case "SIA":
@@ -220,6 +225,10 @@ function ShowTpForm(module) {
             document.getElementById('divCP').style.backgroundColor = '#FFFFFF';
             document.getElementById('divSIA').style.backgroundColor = '#00C521';
             document.getElementById('divSCH').style.backgroundColor = '#FFFFFF';
+			
+			document.getElementById("divCP").classList.remove("selectedStatusTab");
+			document.getElementById("divSIA").classList.add("selectedStatusTab");
+			document.getElementById("divSCH").classList.remove("selectedStatusTab");
 
             document.getElementById('divCP').style.color = '#000000';
             document.getElementById('divSIA').style.color = '#FFFFFF';
@@ -248,6 +257,10 @@ function ShowTpForm(module) {
             document.getElementById('divSIA').style.backgroundColor = '#FFFFFF';
             document.getElementById('divSCH').style.backgroundColor = '#00C521';
 
+			document.getElementById("divCP").classList.remove("selectedStatusTab");
+			document.getElementById("divSIA").classList.remove("selectedStatusTab");
+			document.getElementById("divSCH").classList.add("selectedStatusTab");
+			
             document.getElementById('divCP').style.color = '#000000';
             document.getElementById('divSIA').style.color = '#000000';
             document.getElementById('divSCH').style.color = '#FFFFFF';

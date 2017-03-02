@@ -47,6 +47,10 @@
 <head profile="<?php print $grddl_profile; ?>">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title> 
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width">
+  <meta http-equiv="cleartype" content="on">
   <?php print $styles; ?>
   <?php print $scripts; ?>
   

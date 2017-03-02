@@ -1,9 +1,75 @@
+.slicknav_menu{display:none!important;}
+.mobile{}
+.mobile .slicknav_menu, .mobile #block-gtranslate-gtranslate, .mobile #block-block-31, .mobile #block-google-adsense-google-adsense-horizontal{display:none!important;}
+
+.mobile .slicknav_menu, .mobile #block-gtranslate-gtranslate, .mobile #block-block-31, .mobile #block-google-adsense-google-adsense-horizontal, .mobile #block-menu-menu-topbar-links, .mobile #block-block-1351, .mobile #block-block-761, .mobile #block-block-376, .mobile #block-block-1311, .mobile #block-block-1491 , .mobile #block-block-1466 , .mobile #block-block-956 , .mobile #block-block-1346 .mobile #block-block-1481{display:none!important;}
+
+.mobile #page, .mobile #mainbox {
+  position:relative;
+  max-width:767px;
+  margin:0 auto;
+  overflow:hidden;
+  width:100%;
+}
+.mobile #edit-search-keys{width:50%;}
+.mobile #statusblock-tabs {
+	height:auto;
+}
+.mobile #block-servicestatus-mta-service-status {
+	height:auto;
+}
+.mobile #sidebar_first{width:100%;float:left;}
+
+.mobile #main-message{width:98%;float:left;}
+.mobile #sidebar_second{width:99%;float:left;}
+.mobile .drop-down-toggle-wrapper {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 180px;
+	height: 38px;
+	cursor:pointer;
+}
+.mobile #riding-links #nestedCol1, .mobile #riding-links #nestedCol2{width:100%;clear:both;float:none;}
+.mobile #riding-links{min-height:250px}
+.mobile .tdiv {padding: 4px 15px;}
+.mobile .views_slideshow_main{padding:0px;}
+.mobile #block-block-16 #centerRow .wrapper{width:96%!important;}
+.mobile #block-block-16 #centerRow .wrapper div{width:96%!important;float:left;}
+
+
+
+.tablet{}
+.tablet .slicknav_menu, .tablet #block-gtranslate-gtranslate, .tablet #block-block-31, .tablet #block-google-adsense-google-adsense-horizontal, .tablet #block-menu-menu-topbar-links, .tablet #block-block-1351, .tablet #block-block-761, .tablet #block-block-376, .tablet #block-block-1311, .tablet #block-block-1491 , .tablet #block-block-1466 , .tablet #block-block-956 , .tablet #block-block-1346 .tablet #block-block-1481{display:none!important;}
+.tablet #page, .tablet #mainbox {
+  position:relative;
+  max-width:960px;
+  margin:0 auto;
+  overflow:hidden;
+  width:100%;
+}
+
+.tablet #statusblock-tabs {
+	height:auto;
+}
+.tablet #block-servicestatus-mta-service-status {
+	height:auto;
+}
+.tablet #sidebar_first{width:35%;float:left;}
+.tablet #sidebar_first .region  div{padding:0px;margin:0px;}
+.tablet #main-message{width:64%;float:left;}
+.tablet #sidebar_second{width:100%;float:none;clear:both;}
+.tablet #block-servicestatus-mta-service-status{width:96%}
+
+.tablet #riding-links #nestedCol2{float:left;width:18%;}
+.tablet .#riding-links #nestedCol1{float:left;width:5%;}
+.tablet  #block-mta-megamenu-mta-megamenu{width:100%;}
+
+
 
 @media screen and (max-width: 1152px) {
 
-  #wrapper {
-  max-width:960px;
-  }
+ 
 
 }
 
@@ -145,10 +211,13 @@
   }
 
   #main-menu .nav-toggle {
-  display:block;
-  font-size:15px;
-  font-weight:bold;
-  line-height:40px;
+	  display:block;
+	  font-size:15px;
+	  font-weight:700;
+	  line-height:40px;
+	  text-align: left;
+	  padding-left: 10px;
+}
   }
 
   .flex-control-nav li {
@@ -340,3 +409,11 @@ body.two-sidebars #sidebar-first {
 }
 
 /*******************Fooer**********************/
+
+
+
+@media screen and (min-width: 960px) and (max-width: 1132px) {
+.trip-tabs, .tdiv{padding:4px 4px;}
+ 
+
+}

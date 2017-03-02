@@ -59,7 +59,7 @@
 <div id="<?php print $block_html_id; ?>" class="roundCorners featurebox">
 
     <span class="span-12"><h2>Service Status</h2></span>
-    <span class="statusDateTime"><?php /*print $timestamp;*/ ?></span>
+    <span class="statusDateTime">as of 6:28:00 AM<?php /*print $timestamp;*/ ?></span>
 	<div id = "statusblock-tabs">
     <ul>
         <li class="t tdiv selectedStatusTab" id="subwayTab">Subway</li>
@@ -78,57 +78,57 @@
                 <li class="gw list_h"><a style="color: #555;" href="http://web.mta.info/weekender.html">The Weekender</a></li>
                 <li class="gw list_h"><a style="color: #555;" href="http://travel.mtanyct.info/serviceadvisory">Future Date</a></li>
             </ul>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
                 <div class="span-11"><img src="<?php echo $transparent_img; ?>" class="subwayIcon_123" alt="1 2 3 Subway"/></div>
                 <div style="margin-top: 4px;" id="123" class="subwayCategory"></div>
             </div>
 
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
                 <div class="span-11"><img width="1" height="1" src="<?php echo $transparent_img; ?>" class="subwayIcon_456" alt="4 5 6 Subway"/></div>
                 <div style="margin-top: 4px;" id="456" class="subwayCategory"></div>
             </div>
 
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
                 <div class="span-11"><img width="1" height="1" src="<?php echo $transparent_img; ?>" class="subwayIcon_7" alt="7 Subway"/></div>
                 <div style="margin-top: 4px;" id="7" class="subwayCategory"></div>
             </div>
 
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
                 <div class="span-11"><img width="1" height="1" src="<?php echo $transparent_img; ?>" class="subwayIcon_ACE" alt="A C E Subway"/></div>
                 <div style="margin-top: 4px;" id="ACE" class="subwayCategory"></div>
             </div>
 
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
                 <div class="span-11"><img width="1" height="1" src="<?php echo $transparent_img; ?>" class="subwayIcon_BDFM" alt="B D F M Subway"/></div>
                 <div style="margin-top: 4px;" id="BDFM" class="subwayCategory"></div>
             </div>
 
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
                 <div class="span-11"><img width="1" height="1" src="<?php echo $transparent_img; ?>" class="subwayIcon_G" alt="G Subway"/></div>
                 <div style="margin-top: 4px;" id="G" class="subwayCategory"></div>
             </div>
 
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
                 <div class="span-11"><img width="1" height="1" src="<?php echo $transparent_img; ?>" class="subwayIcon_JZ" alt="J Z Subway"/></div>
                 <div style="margin-top: 4px;" id="JZ" class="subwayCategory"></div>
             </div>
 
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
                 <div class="span-11"><img width="1" height="1" src="<?php echo $transparent_img; ?>" class="subwayIcon_L" alt="L Subway"/></div>
                 <div style="margin-top: 4px;" id="L" class="subwayCategory"></div>
             </div>
 
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
                 <div class="span-11"><img width="1" height="1" src="<?php echo $transparent_img; ?>" class="subwayIcon_NQR" alt="N Q R Subway"/></div>
                 <div style="margin-top: 4px;" id="NQR" class="subwayCategory"></div>
             </div>
 
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
                 <div class="span-11"><img width="1" height="1" src="<?php echo $transparent_img; ?>" class="subwayIcon_S" alt="S Subway"/></div>
                 <div style="margin-top: 4px;" id="S" class="subwayCategory"></div>
             </div>
 
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
                 <div class="span-11"><img width="1" height="1" src="<?php echo $transparent_img; ?>" class="subwayIcon_SIR" alt="Staten Island Railway"/></div>
                 <div style="margin-top: 4px;" id="SIR" class="subwayCategory"></div>
             </div>
@@ -142,57 +142,57 @@
                 <li class="gw list_h"><a style="color: #555;" href="http://web.mta.info/lirr/News/PlannedService.htm">Future Date</a></li>
             </ul>
 
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare2"></div>
                 <div class="span-11 railLineItem">Babylon</div>
                 <div id="Babylon" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare1"></div>
                 <div class="span-11 railLineItem">City Terminal Zone</div>
                 <div id="CityTerminalZone" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare3"></div>
                 <div class="span-11 railLineItem">Far Rockaway</div>
                 <div id="FarRockaway" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare4"></div>
                 <div class="span-11 railLineItem">Hempstead</div>
                 <div id="Hempstead" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare5"></div>
                 <div class="span-11 railLineItem">Long Beach</div>
                 <div id="LongBeach" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare6"></div>
                 <div class="span-11 railLineItem">Montauk</div>
                 <div id="Montauk" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare7"></div>
                 <div class="span-11 railLineItem">Oyster Bay</div>
                 <div id="OysterBay" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare8"></div>
                 <div class="span-11 railLineItem">Port Jefferson</div>
                 <div id="PortJefferson" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare9"></div>
                 <div class="span-11 railLineItem">Port Washington</div>
                 <div id="PortWashington" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare10"></div>
                 <div class="span-11 railLineItem">Ronkonkoma</div>
                 <div id="Ronkonkoma" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare11"></div>
                 <div class="span-11 railLineItem">West Hempstead</div>
                 <div id="WestHempstead" class="railStation railCategory"></div>
@@ -204,47 +204,47 @@
             </div>
 
 
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare12"></div>
                 <div class="span-11 railLineItem">Hudson</div>
                 <div id="Hudson" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare13"></div>
                 <div class="span-11 railLineItem">Harlem</div>
                 <div id="Harlem" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus"></div>
                 <div style="margin-left: 10px;" class="span-10 railLineItem">Wassaic</div>
                 <div id="Wassaic" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare15"></div>
                 <div class="span-11 railLineItem">New Haven</div>
                 <div id="NewHaven" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus"></div>
                 <div style="margin-left: 10px;" class="span-10 railLineItem">New Canaan</div>
                 <div id="NewCanaan" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus"></div>
                 <div style="margin-left: 10px;" class="span-10 railLineItem">Danbury</div>
                 <div id="Danbury" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus"></div>
                 <div style="margin-left: 10px;" class="span-10 railLineItem">Waterbury</div>
                 <div id="Waterbury" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare19"></div>
                 <div class="span-11 railLineItem">Pascack Valley</div>
                 <div id="PascackValley" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus" id="railSquare20"></div>
                 <div class="span-11 railLineItem">Port Jervis</div>
                 <div id="PortJervis" class="railStation railCategory"></div>
@@ -254,43 +254,43 @@
 
         <!-- Bus -->
         <div id="busDiv" style="float: left; display: none; margin-top: 11px;">
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
                     <span class="span-11 busLineItem">B1 - B84</span>
                     <span id="B1-B84" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
                 <span class="span-11 busLineItem">B100 - B103</span>
                 <span id="B100-B103" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
                 <span class="span-11 busLineItem">BM1 - BM5</span>
                 <span id="BM1-BM5" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
                 <span class="span-11 busLineItem">BX1 - BX46</span>
                 <span id="BX1-BX55" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
                 <span class="span-11 busLineItem">BXM1 - BXM18</span>
                 <span id="BXM1-BXM18" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
                 <span class="span-11 busLineItem">M1 - M116</span>
                 <span id="M1-M116" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
                 <span class="span-11 busLineItem">Q1 - Q114</span>
                 <span id="Q1-Q113" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
                 <span class="span-11 busLineItem">QM1 - QM44</span>
                 <span id="QM1-QM44" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
                 <span class="span-11 busLineItem">S40 - S98</span>
                 <span id="S40-S98" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
                 <span class="span-11 busLineItem">x1 - x68</span>
                 <span id="x1-x68" class="busCategory"></span>
             </div>
@@ -303,39 +303,39 @@
                 <li class="gw list_h"><a style="color: #555;" href="http://mta.info/bandt/traffic">Future Date</a></li>
             </ul>
 
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
                 <span class="span-11 busLineItem">Throgs Neck</span>
                 <span id="ThrogsNeck" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
                 <span class="span-11 busLineItem">Henry Hudson</span>
                 <span id="HenryHudson" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
                 <span class="span-11 busLineItem">Marine Parkway</span>
                 <span id="MarineParkway" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
                 <span class="span-11 busLineItem">Bronx-Whitestone</span>
                 <span id="Bronx-Whitestone" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
                 <span class="span-11 busLineItem">Hugh L. Carey</span>
                 <span id="HughLCarey" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
                 <span class="span-11 busLineItem">Queens Midtown</span>
                 <span id="QueensMidtown" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
                 <span class="span-11 busLineItem">Robert F. Kennedy</span>
                 <span id="RobertFKennedy" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
                 <span class="span-11 busLineItem">Cross Bay</span>
                 <span id="CrossBay" class="busCategory"></span>
             </div>
-            <div style="float: left; width: 220px; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
                 <span class="span-11 busLineItem">Verrazano-Narrows</span>
                 <span id="Verrazano-Narrows" class="busCategory"></span>
             </div>

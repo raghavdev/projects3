@@ -13,9 +13,9 @@ jQuery(document).ready(function($) {
         } else {
     $('#main-menu li').each(function() {
       if($(this).children('ul').length)
-        $(this).append('<span class="drop-down-toggle"><span class="drop-down-arrow"></span></span>');
+        $(this).append('<span class="drop-down-toggle-wrapper"><span class="drop-down-toggle"><span class="drop-down-arrow"></span></span></span>');
     });
-    $('.drop-down-toggle').click(function() {
+    $('.drop-down-toggle-wrapper').click(function() {
       $(this).parent().children('ul').slideToggle(250);
     });
   }

@@ -30,15 +30,15 @@
                             position: absolute; left: 780px; top: 190px;" />
                         <table cellpadding="0" cellspacing="0" style="width: 100%;   margin-bottom: 0;" >
                             <tr>
-                                <td id="divCP" onclick="ShowTpForm('CP')" style="background-color: #00BB11; color: White;
+                                <td id="divCP" class="trip-tabs selectedStatusTab" onclick="ShowTpForm('CP')" style="background-color: #00BB11; color: White;
                                     border: solid 1px gray; cursor: pointer;">
                                     Custom Planner
                                 </td>
-                                <td id="divSIA" onclick="ShowTpForm('SIA')" style="cursor: pointer; border-bottom: solid 1px gray;
+                                <td id="divSIA" class="trip-tabs" onclick="ShowTpForm('SIA')" style="cursor: pointer; border-bottom: solid 1px gray;
                                     border-top: solid 1px gray;">
                                     Service in the Area
                                 </td>
-                                <td id="divSCH" onclick="ShowTpForm('SCH')" style="cursor: pointer; border: solid 1px gray;">
+                                <td id="divSCH" class="trip-tabs" onclick="ShowTpForm('SCH')" style="cursor: pointer; border: solid 1px gray;">
                                     Schedules
                                 </td>
                             </tr>
