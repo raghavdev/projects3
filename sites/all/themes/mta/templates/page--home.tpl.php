@@ -39,14 +39,23 @@
 							<div class="container">
 								<div class="span-94">									
 									<div id="messages"> <?php print $messages; ?> </div>
-									
+									<div id="mobile-blocks">
+										<!--<div id="mobile-blocks-servicestatus"></div>
+										<div id="mobile-blocks-tripplanner"></div>
+										<div id="mobile-blocks-rotaterimage"></div>
+										<div id="mobile-blocks-traveltime"></div>
+										<div id="mobile-blocks-mymtaalerts"></div>
+										<div id="mobile-blocks-appcenter"></div>
+										-->
+										<?php print $mobile_blocks; ?>
+									</div>
       		    																
 									<?php if ($page['sidebar_first']): ?>
-										<div id="sidebar_first" class="span-23">
+										<div id="sidebar_first" class="span-23 mobile-apply">
 											<?php print render($page['sidebar_first']); ?>
 																					
 									<?php print render($page['sidebar_first_lower']); ?>	
-									<div id="sidebar_first_lower" class="sidebar_first_lower">
+									<div id="sidebar_first_lower" class="sidebar_first_lower mobile-apply">
 												</div>
 													</div>																										
 										<?php endif; ?>
@@ -54,7 +63,7 @@
 								
 								
 								<?php 
-										print'<div id="main-message" class="span-46">';
+										print'<div id="main-message" class="span-46 mobile-apply">';
 
 								?>
 
@@ -85,7 +94,7 @@
 
 							
 									<?php if ($page['sidebar_second']): ?>
-										<div id="sidebar_second" class="column sidebar"><div class="section">
+										<div id="sidebar_second" class="column sidebar mobile-apply"><div class="section">
 										<?php print render($page['sidebar_second']); ?>
 										</div> <!-- /.section, /#sidebar_second -->
 									
@@ -97,7 +106,7 @@
 									<?php endif; ?>
 
 										<?php if ($page['help']): ?>
-										<div id="help" class="column sidebar"><div class="section">
+										<div id="help" class="column sidebar "><div class="section">
 										<?php print render($page['help']); ?>
 										</div></div> <!-- /.section, /#help -->
 									<?php endif; ?>

@@ -22,7 +22,7 @@ stylesheets[all][] = css/responsive.css
 
 
 scripts[] = js/webtrends.load.js
-scripts[] = js/jquery.slicknav.min.js
+;scripts[] = js/jquery.slicknav.min.js
 scripts[] = js/custom.js
 
 

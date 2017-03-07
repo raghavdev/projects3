@@ -51,10 +51,11 @@
 <?php 
     global $base_url;
     $transparent_img = $base_url.'/'.drupal_get_path('module','servicestatus').'/images/img_trans.gif';
-    $script_path = $base_url.'/'.drupal_get_path('module','servicestatus').'/ss.js';
+    //$script_path = $base_url.'/'.drupal_get_path('module','servicestatus').'/ss.js';
+	drupal_add_js(drupal_get_path('module','servicestatus').'/ss.js', 'file');
 ?>
 
-<script type="text/javascript" src="<?php echo $script_path; ?>"></script>
+<!--<script type="text/javascript" src="<?php //echo $script_path; ?>"></script>-->
 
 <div id="<?php print $block_html_id; ?>" class="roundCorners featurebox">
 

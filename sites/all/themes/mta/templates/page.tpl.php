@@ -14,7 +14,7 @@
 
 				</div>
 			 </div>
-			<div id="navbar"><?php print //render($page['navbar']);?>
+			<div id="navbar"><?php //print render($page['navbar']);?>
 				<nav id="main-menu"  role="navigation">
 					<a class="nav-toggle" href="#"><?php print t("Menu"); ?></a>
 					<div class="menu-navigation-container">
@@ -33,7 +33,8 @@
 				
 				</div>
 			<div id="breadcrumb"> <!-- we leave the div and keep spacing -->
-								<?php //if ($breadcrumb){print $breadcrumb;}?>
+								<?php //if ($breadcrumb){print $breadcrumb;} 
+								?>
 			</div>
 			<div id="contentbox" class="roundCorners clearfix">
 							<div class="container">

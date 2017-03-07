@@ -9,7 +9,7 @@
         $('#pageTitleArea').html("<h2>MTA Service Status</h2>");
 
         var differential = Math.round((new Date().getTime())/60000);
-        var url = "/service_status_json/" + differential;
+        var url = "http://54.173.205.6/service_status_json/" + differential;
 
         $.ajaxSetup({ 
             // cache: false,
@@ -17,9 +17,7 @@
             contentType: "application/json; charset=utf-8"
         });
 
-         
-
-        $.ajax({
+       $.ajax({
             url: url,
             dataType: 'json',
             success: function(d) {
