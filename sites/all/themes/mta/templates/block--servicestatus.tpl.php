@@ -63,17 +63,17 @@
     <span class="statusDateTime">as of 6:28:00 AM<?php /*print $timestamp;*/ ?></span>
 	<div id = "statusblock-tabs">
     <ul>
-        <li class="t tdiv selectedStatusTab" id="subwayTab">Subway</li>
-        <li class="t tdiv notselectedStatusTab" id="railTab">Rail</li>
-        <li class="t tdiv notselectedStatusTab" id="busTab">Bus</li>
-        <li class="t tlast tdiv notselectedStatusTab" id="bntTab">Bridges &amp; Tunnels</li>
+        <li class="t tdiv selectedStatusTab subwayTab" id="subwayTab">Subway</li>
+        <li class="t tdiv notselectedStatusTab railTab" id="railTab">Rail</li>
+        <li class="t tdiv notselectedStatusTab busTab" id="busTab">Bus</li>
+        <li class="t tlast tdiv notselectedStatusTab bntTab" id="bntTab">Bridges &amp; Tunnels</li>
     </ul>
 	</div>
     <div class="content"<?php print $content_attributes; ?> style="clear:both;">
 
         
 
-        <div id="subwayDiv" style="float: left; margin-top: 1px;">
+        <div id="subwayDiv" class="subwayDiv" style="float: left; margin-top: 1px;">
             <ul style="float: right; padding:0; margin:0">
                 <!-- <li class="gw list_h" onClick="window.parent.location=\'http://mta.info/weekender\'">The Weekender</li> -->
                 <li class="gw list_h"><a style="color: #555;" href="http://web.mta.info/weekender.html">The Weekender</a></li>
@@ -137,7 +137,7 @@
         <!-- End of Subway -->
 
         <!-- Rail Div -->
-        <div id="railDiv" style="float: left; display: none;">
+        <div id="railDiv" class="railDiv" style="float: left; display: none;">
             <span class="RailRoadCompany">Long Island Rail Road</span>
             <ul style="float: right; padding:0; margin:0">
                 <li class="gw list_h"><a style="color: #555;" href="http://web.mta.info/lirr/News/PlannedService.htm">Future Date</a></li>
@@ -254,7 +254,7 @@
         <!-- End of Rail -->
 
         <!-- Bus -->
-        <div id="busDiv" style="float: left; display: none; margin-top: 11px;">
+        <div id="busDiv"  class="busDiv"  style="float: left; display: none; margin-top: 11px;">
             <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 9px 0;">
                     <span class="span-11 busLineItem">B1 - B84</span>
                     <span id="B1-B84" class="busCategory"></span>
@@ -299,7 +299,7 @@
         <!-- End of Bus -->
 
         <!-- Bridges & Tunnels -->
-        <div id="bntDiv" style="float: left; display: none; margin-top: 12px;">
+        <div id="bntDiv"  class="bntDiv" style="float: left; display: none; margin-top: 12px;">
             <ul style="float: right; padding:0; margin:0">
                 <li class="gw list_h"><a style="color: #555;" href="http://mta.info/bandt/traffic">Future Date</a></li>
             </ul>

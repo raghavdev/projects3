@@ -106,6 +106,7 @@ function mta_preprocess_page(&$vars) {
 	$mobile_blocks_array[] = "canarsietunnelreconstruction";
 	$mobile_blocks_array[] = "traveltime";
 	$mobile_blocks_array[] = "fixfortify";
+	$mobile_blocks_array[] = "b711";
 	mobileblock_content_dynamic_lirr();
   } else if(drupal_get_path_alias() == 'mnr'){
     $mobile_blocks_array[] = "servicestatus";
@@ -121,6 +122,7 @@ function mta_preprocess_page(&$vars) {
 	$mobile_blocks_array[] = "b1251";
 	$mobile_blocks_array[] = "b651";
 	$mobile_blocks_array[] = "b1451";
+	$mobile_blocks_array[] = "b706";
 	
 	
 	
@@ -198,6 +200,7 @@ function mobileblock_content_dynamic_mnr(){
 	$("#mobile-blocks-b1251").html(\'<div id="block-block-1251" class="block block-block">\' + $(\'#block-block-1251\').html() + \'</div>\');
 	$("#mobile-blocks-b651").html(\'<div id="block-block-651" class="block block-block">\' + $(\'#block-block-651\').html() + \'</div>\');
 	$("#mobile-blocks-b1451").html(\'<div id="block-block-1431" class="block block-block">\' + $(\'#block-block-1431\').html() + \'</div>\');
+	$("#mobile-blocks-b706").html(\'<div id="block-block-706" class="block block-block">\' + $(\'#block-block-706\').html() + \'</div>\');
   });
 });';
   drupal_add_js($js, 'inline');
@@ -217,6 +220,7 @@ function mobileblock_content_dynamic_lirr(){
 	$("#mobile-blocks-canarsietunnelreconstruction").html(\'<div id="block-block-251" class="block block-block">\' + $(\'#block-block-251\').html() + \'</div>\');
 	$("#mobile-blocks-traveltime").html(\'<div id="block-block-1391" class="block block-block">\' + $(\'#block-block-1391\').html() + \'</div>\');
 	$("#mobile-blocks-fixfortify").html(\'<div id="block-block-1431" class="block block-block">\' + $(\'#block-block-1431\').html() + \'</div>\');
+	$("#mobile-blocks-b711").html(\'<div id="block-block-711" class="block block-block">\' + $(\'#block-block-711\').html() + \'</div>\');
   });
 });';
   drupal_add_js($js, 'inline');
