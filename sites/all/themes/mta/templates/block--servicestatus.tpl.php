@@ -48,6 +48,35 @@
  */
 ?>
 
+<style>
+.railLineItem {
+	color:#FFFFFF;
+	font-size: 85%;
+	font-weight: bold;
+    }
+    
+.railLineItemSub {
+	/*color:#FFFFFF;*/
+	font-size: 85%;
+	font-weight: bold;
+    }
+.rail_GoodService {
+    /*color: #FFFFFF;*/
+}
+
+.rail_Delays a{
+    color: #FFFFFF;
+}
+.railStation{
+    color: #FFFFFF;
+}
+
+.futureDate{
+    padding-right: 10px;
+}
+
+</style>
+
 <?php 
     global $base_url;
     $transparent_img = $base_url.'/'.drupal_get_path('module','servicestatus').'/images/img_trans.gif';
@@ -77,7 +106,7 @@
             <ul style="float: right; padding:0; margin:0">
                 <!-- <li class="gw list_h" onClick="window.parent.location=\'http://mta.info/weekender\'">The Weekender</li> -->
                 <li class="gw list_h"><a style="color: #555;" href="http://web.mta.info/weekender.html">The Weekender</a></li>
-                <li class="gw list_h"><a style="color: #555;" href="http://travel.mtanyct.info/serviceadvisory">Future Date</a></li>
+                <li class="gw list_h futureDate"><a style="color: #555;" href="http://travel.mtanyct.info/serviceadvisory">Future Date</a></li>
             </ul>
             <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 4px 0;">
                 <div class="span-11"><img src="<?php echo $transparent_img; ?>" class="subwayIcon_123" alt="1 2 3 Subway"/></div>
@@ -140,112 +169,112 @@
         <div id="railDiv" class="railDiv" style="float: left; display: none;">
             <span class="RailRoadCompany">Long Island Rail Road</span>
             <ul style="float: right; padding:0; margin:0">
-                <li class="gw list_h"><a style="color: #555;" href="http://web.mta.info/lirr/News/PlannedService.htm">Future Date</a></li>
+                <li class="gw list_h futureDate"><a style="color: #555;" href="http://web.mta.info/lirr/News/PlannedService.htm">Future Date</a></li>
             </ul>
 
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #00985F;">
                 <div class="railLineStatus" id="railSquare2"></div>
                 <div class="span-11 railLineItem">Babylon</div>
                 <div id="Babylon" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #4D5357;">
                 <div class="railLineStatus" id="railSquare1"></div>
                 <div class="span-11 railLineItem">City Terminal Zone</div>
                 <div id="CityTerminalZone" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #6E3219;">
                 <div class="railLineStatus" id="railSquare3"></div>
                 <div class="span-11 railLineItem">Far Rockaway</div>
                 <div id="FarRockaway" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #CE8E00;">
                 <div class="railLineStatus" id="railSquare4"></div>
                 <div class="span-11 railLineItem">Hempstead</div>
                 <div id="Hempstead" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #FF6319;">
                 <div class="railLineStatus" id="railSquare5"></div>
                 <div class="span-11 railLineItem">Long Beach</div>
                 <div id="LongBeach" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #006983;">
                 <div class="railLineStatus" id="railSquare6"></div>
                 <div class="span-11 railLineItem">Montauk</div>
                 <div id="Montauk" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #00AF3F;">
                 <div class="railLineStatus" id="railSquare7"></div>
                 <div class="span-11 railLineItem">Oyster Bay</div>
                 <div id="OysterBay" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #0039A6;">
                 <div class="railLineStatus" id="railSquare8"></div>
                 <div class="span-11 railLineItem">Port Jefferson</div>
                 <div id="PortJefferson" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #C60C30;">
                 <div class="railLineStatus" id="railSquare9"></div>
                 <div class="span-11 railLineItem">Port Washington</div>
                 <div id="PortWashington" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #A626AA;">
                 <div class="railLineStatus" id="railSquare10"></div>
                 <div class="span-11 railLineItem">Ronkonkoma</div>
                 <div id="Ronkonkoma" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #00A1DE;">
                 <div class="railLineStatus" id="railSquare11"></div>
                 <div class="span-11 railLineItem">West Hempstead</div>
                 <div id="WestHempstead" class="railStation railCategory"></div>
             </div>
             <div style="float: left; width: 100%;"><span class="RailRoadCompany">Metro-North Railroad</span>
                 <ul style="float: right; padding:0; margin:0">
-                    <li class="gw list_h"><a style="color: #555;" href="http://web.mta.info/mnr/html/serviceupdates.htm">Future Date</a></li>
+                    <li class="gw list_h futureDate"><a style="color: #555;" href="http://web.mta.info/mnr/html/serviceupdates.htm">Future Date</a></li>
                 </ul>
             </div>
 
 
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #009B3A;">
                 <div class="railLineStatus" id="railSquare12"></div>
                 <div class="span-11 railLineItem">Hudson</div>
                 <div id="Hudson" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #0039A6;">
                 <div class="railLineStatus" id="railSquare13"></div>
                 <div class="span-11 railLineItem">Harlem</div>
                 <div id="Harlem" class="railStation railCategory"></div>
             </div>
             <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus"></div>
-                <div style="margin-left: 10px;" class="span-10 railLineItem">Wassaic</div>
-                <div id="Wassaic" class="railStation railCategory"></div>
+                <div style="margin-left: 10px;" class="span-10 railLineItemSub">Wassaic</div>
+                <div id="Wassaic" class="railStation railCategory" style="color:#006600"></div>
             </div>
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #EE0034;">
                 <div class="railLineStatus" id="railSquare15"></div>
                 <div class="span-11 railLineItem">New Haven</div>
                 <div id="NewHaven" class="railStation railCategory"></div>
             </div>
             <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus"></div>
-                <div style="margin-left: 10px;" class="span-10 railLineItem">New Canaan</div>
-                <div id="NewCanaan" class="railStation railCategory"></div>
+                <div style="margin-left: 10px;" class="span-10 railLineItemSub">New Canaan</div>
+                <div id="NewCanaan" class="railStation railCategory" style="color:#006600"></div>
             </div>
             <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus"></div>
-                <div style="margin-left: 10px;" class="span-10 railLineItem">Danbury</div>
-                <div id="Danbury" class="railStation railCategory"></div>
+                <div style="margin-left: 10px;" class="span-10 railLineItemSub">Danbury</div>
+                <div id="Danbury" class="railStation railCategory" style="color:#006600"></div>
             </div>
             <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
                 <div class="railLineStatus"></div>
-                <div style="margin-left: 10px;" class="span-10 railLineItem">Waterbury</div>
-                <div id="Waterbury" class="railStation railCategory"></div>
+                <div style="margin-left: 10px;" class="span-10 railLineItemSub">Waterbury</div>
+                <div id="Waterbury" class="railStation railCategory" style="color:#006600"></div>
             </div>
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #8E258D;">
                 <div class="railLineStatus" id="railSquare19"></div>
                 <div class="span-11 railLineItem">Pascack Valley</div>
                 <div id="PascackValley" class="railStation railCategory"></div>
             </div>
-            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0;">
+            <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 1px 0; background-color: #FF7900;">
                 <div class="railLineStatus" id="railSquare20"></div>
                 <div class="span-11 railLineItem">Port Jervis</div>
                 <div id="PortJervis" class="railStation railCategory"></div>
@@ -301,7 +330,7 @@
         <!-- Bridges & Tunnels -->
         <div id="bntDiv"  class="bntDiv" style="float: left; display: none; margin-top: 12px;">
             <ul style="float: right; padding:0; margin:0">
-                <li class="gw list_h"><a style="color: #555;" href="http://mta.info/bandt/traffic">Future Date</a></li>
+                <li class="gw list_h futureDate"><a style="color: #555;" href="http://mta.info/bandt/traffic">Future Date</a></li>
             </ul>
 
             <div style="float: left; width: 96%; border-bottom: 1px solid #7B7B98; padding: 10px 0;">
