@@ -3,10 +3,10 @@ jQuery(document).ready(function($) {
 	//responsive for IE-8 code here
         // Normal Case
         var size = jQuery('body').width();
-        if (size <= 767) {
+        if (size <= 640) {
             jQuery('body').removeClass('tablet').removeClass('desktop');
             jQuery('body').addClass("mobile");
-        } else if (size >= 768 && size <= 960) {
+        } else if (size >= 641 && size <= 960) {
             jQuery('body').removeClass('mobile').removeClass('desktop');
             jQuery('body').addClass("tablet");
 			//jQuery('#main-message').hide();
@@ -24,10 +24,10 @@ jQuery(document).ready(function($) {
         // Resize
         jQuery(window).resize(function () {
             var size = jQuery('body').width();
-            if (size <= 767) {
+            if (size <= 640) {
                 jQuery('body').removeClass('tablet').removeClass('desktop');
                 jQuery('body').addClass("mobile");
-            } else if (size >= 768 && size <= 960) {
+            } else if (size >= 641 && size <= 960) {
                 jQuery('body').removeClass('mobile').removeClass('deskop');
                 jQuery('body').addClass("tablet");
             } else if (size >= 961) {
@@ -45,6 +45,23 @@ jQuery(document).ready(function($) {
     $('#main-menu div ul:first-child').slideToggle(250);
     return false;
   });
+  
+  var slidebar_width  = 290; //slidebar width + padding size
+var slide_bar       = $(".side-menu-wrapper"); //slidebar
+var slide_open_btn  = $(".slide-menu-open"); //slidebar close btn
+var slide_close_btn = $(".menu-close"); //slidebar close btn
+var overlay         = $(".side-menu-overlay"); //slidebar close btn
+
+slide_open_btn.click(function(e){
+    e.preventDefault();
+    slide_bar.css( {"right": "0px"}); //change to "right" for right positioned menu
+    overlay.css({"opacity":"1", "width":"100%"});
+});
+slide_close_btn.click(function(e){
+    e.preventDefault();
+    slide_bar.css({"right": "-"+ slidebar_width + "px"}); //change to "right" for right positioned menu
+    overlay.css({"opacity":"0", "width":"0"});  
+});
   
 	if( (size > 640) || (size > 640) ) {
         $('#main-menu li').mouseenter(function() {

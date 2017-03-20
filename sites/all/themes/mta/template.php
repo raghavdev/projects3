@@ -168,12 +168,26 @@ function mobileblock_content_dynamic_bandt(){
 	$js = 'jQuery(document).ready(function($) {
   //On Window Load
   $( window ).load(function() {
-    $("#mobile-blocks-servicestatus").html(\'<div id="block-servicestatus-mta-service-status" class="roundCorners featurebox">\' + $(\'#block-servicestatus-mta-service-status\').html() + \'</div>\');
-	$("#mobile-blocks-tripplanner").html(\'<div id="block-block-591" class="block block-block">\' + $(\'#block-block-591\').html() + \'</div>\');
-	$("#mobile-blocks-servicestatusnotices").html(\'<div id="block-service-notice-service-notice-bandt" class="block block-service-notice">\' + $(\'#block-service-notice-service-notice-bandt\').html() + \'</div>\');
-	$("#mobile-blocks-rotaterimage").html(\'<div id="block-views-news-rotator-block-3" class="block block-views">\' + $(\'#block-views-news-rotator-block-3\').html() + \'</div>\');
+    $("#mobile-blocks-servicestatus").html(\'<div class="block-heading-container">'. get_toggle_open('Service Status', 'icon-plus', 'open') . '<div id="block-servicestatus-mta-service-status" class="block-heading roundCorners featurebox open">\' + $(\'#block-servicestatus-mta-service-status\').html() + \'</div></div>\');
 	
+	$("#mobile-blocks-tripplanner").html(\'<div class="block-heading-container">'. get_toggle_open('TripPlanner', 'icon-plus') . '<div id="block-heading block-block-591" class="block-heading block block-block">\' + $(\'#block-block-591\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-servicestatusnotices").html(\'<div class="block-heading-container">'. get_toggle_open('Special Service Notices', 'icon-plus') . '<div id="block-service-notice-service-notice-bandt" class="block-heading block block-service-notice">\' + $(\'#block-service-notice-service-notice-bandt\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-rotaterimage").html(\'<div class="block-heading-container">'. get_toggle_open('Rotator', 'icon-plus') . '<div id="block-views-news-rotator-block-3" class="block-heading block block-views">\' + $(\'#block-views-news-rotator-block-3\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-appcenter").html(\'<div class="block-heading-container">'. get_toggle_open('App Center', 'icon-plus') .' <div id="block-block-381" class="block-heading block block-block contextual-links-region">\' + $(\'#block-block-381\').html() + \'</div></div>\');
 
+	
+$( ".block-toogle-heading" ).click(function() {
+	  $(this).next( ".block-heading" ).toggle("slow");
+	  $(this).toggleClass("open");
+	  $(this).find(".title").toggle();
+	  
+	  $(this).find(".toggle-sign").toggleClass("open");
+	  $(this).find(".toggle-sign").find(".icon").toggleClass("icon-plus");
+	  $(this).find(".toggle-sign").find(".icon").toggleClass("icon-minus");
+	});
 	
 	
   });
@@ -185,22 +199,43 @@ function mobileblock_content_dynamic_mnr(){
 	$js = 'jQuery(document).ready(function($) {
   //On Window Load
   $( window ).load(function() {
-    $("#mobile-blocks-servicestatus").html(\'<div id="block-servicestatus-mta-service-status" class="roundCorners featurebox">\' + $(\'#block-servicestatus-mta-service-status\').html() + \'</div>\');
-	$("#mobile-blocks-tripplanner").html(\'<div id="block-tripplanner-tripplanner" class="block block-tripplanner">\' + $(\'#block-tripplanner-tripplanner\').html() + \'</div>\');
-	$("#mobile-blocks-servicestatusnotices").html(\'<div id="block-service-notice-service-notice-mnr" class="block block-service-notice">\' + $(\'#block-service-notice-service-notice-mnr\').html() + \'</div>\');
-	$("#mobile-blocks-rotaterimage").html(\'<div id="block-views-news-rotator-block-4" class="block block-views">\' + $(\'#block-views-news-rotator-block-4\').html() + \'</div>\');
+    $("#mobile-blocks-servicestatus").html(\'<div class="block-heading-container">'. get_toggle_open('Service Status', 'icon-plus', 'open') . '<div id="block-servicestatus-mta-service-status" class="block-heading  roundCorners featurebox open">\' + $(\'#block-servicestatus-mta-service-status\').html() + \'</div></div>\');
 	
-	$("#mobile-blocks-secondavenuesubway").html(\'<div id="block-block-1371" class="block block-block">\' + $(\'#block-block-1371\').html() + \'</div>\');
+	$("#mobile-blocks-tripplanner").html(\'<div class="block-heading-container">'. get_toggle_open('TripPlanner', 'icon-plus') . '<div id="block-tripplanner-tripplanner" class="block-heading block block-tripplanner">\' + $(\'#block-tripplanner-tripplanner\').html() + \'</div></div>\');
 	
-	$("#mobile-blocks-canarsietunnelreconstruction").html(\'<div id="block-block-1376" class="block block-block">\' + $(\'#block-block-1376\').html() + \'</div>\');
-	$("#mobile-blocks-traveltime").html(\'<div id="block-block-751" class="block block-block">\' + $(\'#block-block-751\').html() + \'</div>\');
-	$("#mobile-blocks-fixfortify").html(\'<div id="block-block-771" class="block block-block">\' + $(\'#block-block-771\').html() + \'</div>\');
-	$("#mobile-blocks-b286").html(\'<div id="block-block-286" class="block block-block">\' + $(\'#block-block-286\').html() + \'</div>\');
-	$("#mobile-blocks-b966").html(\'<div id="block-block-966" class="block block-block">\' + $(\'#block-block-966\').html() + \'</div>\');
-	$("#mobile-blocks-b1251").html(\'<div id="block-block-1251" class="block block-block">\' + $(\'#block-block-1251\').html() + \'</div>\');
-	$("#mobile-blocks-b651").html(\'<div id="block-block-651" class="block block-block">\' + $(\'#block-block-651\').html() + \'</div>\');
-	$("#mobile-blocks-b1451").html(\'<div id="block-block-1431" class="block block-block">\' + $(\'#block-block-1431\').html() + \'</div>\');
-	$("#mobile-blocks-b706").html(\'<div id="block-block-706" class="block block-block">\' + $(\'#block-block-706\').html() + \'</div>\');
+	$("#mobile-blocks-servicestatusnotices").html(\'<div class="block-heading-container">'. get_toggle_open('Special Service Notices', 'icon-plus') . '<div id="block-service-notice-service-notice-mnr" class="block-heading  block block-service-notice">\' + $(\'#block-service-notice-service-notice-mnr\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-rotaterimage").html(\'<div class="block-heading-container">'. get_toggle_open('Rotator', 'icon-plus') . '<div id="block-views-news-rotator-block-4" class="block-heading  block block-views">\' + $(\'#block-views-news-rotator-block-4\').html() + \'</div></div>\');
+	
+	
+	$("#mobile-blocks-canarsietunnelreconstruction").html(\'<div class="block-heading-container">'. get_toggle_open('MTA eTix', 'icon-plus') . '<div id="block-block-1376" class="block-heading  block block-block">\' + $(\'#block-block-1376\').html() + \'</div></div>\');
+	
+	//$("#mobile-blocks-traveltime").html(\'<div class="block-heading-container">'. get_toggle_open('Conatc us', 'icon-plus') . '<div id="block-block-751" class="block-heading  block block-block">\' + $(\'#block-block-751\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-fixfortify").html(\'<div class="block-heading-container">'. get_toggle_open('Win 10 Rides ', 'icon-plus') . '<div id="block-block-771" class="block-heading  block block-block">\' + $(\'#block-block-771\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-b286").html(\'<div class="block-heading-container">'. get_toggle_open('Ways to Pay', 'icon-plus') . '<div id="block-block-286" class="block-heading  block block-block">\' + $(\'#block-block-286\').html() + \'</div></div>\');
+	
+	//$("#mobile-blocks-b966").html(\'<div class="block-heading-container">'. get_toggle_open('Metro North', 'icon-plus') . '<div id="block-block-966" class="block-heading  block block-block">\' + $(\'#block-block-966\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-b1251").html(\'<div class="block-heading-container">'. get_toggle_open('Deals and Gateway', 'icon-plus') . '<div id="block-block-1251" class="block-heading  block block-block">\' + $(\'#block-block-1251\').html() + \'</div></div>\'); 
+	
+	//$("#mobile-blocks-b651").html(\'<div class="block-heading-container">'. get_toggle_open('Safeguard Your Stuff', 'icon-plus') . '<div id="block-block-651" class="block-heading  block block-block">\' + $(\'#block-block-651\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-b1451").html(\'<div class="block-heading-container">'. get_toggle_open('My Alerts', 'icon-plus') . '<div id="block-block-1431" class="block-heading block block-block">\' + $(\'#block-block-1431\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-b706").html(\'<div class="block-heading-container">'. get_toggle_open('Travel Time', 'icon-plus') . '<div id="block-block-706" class="block-heading block block-block">\' + $(\'#block-block-706\').html() + \'</div></div>\');
+	
+	$( ".block-toogle-heading" ).click(function() {
+	  $(this).next( ".block-heading" ).toggle("slow");
+	  $(this).toggleClass("open");
+	  $(this).find(".title").toggle();
+	  
+	  $(this).find(".toggle-sign").toggleClass("open");
+	  $(this).find(".toggle-sign").find(".icon").toggleClass("icon-plus");
+	  $(this).find(".toggle-sign").find(".icon").toggleClass("icon-minus");
+	});
+	
   });
 });';
   drupal_add_js($js, 'inline');
@@ -210,17 +245,33 @@ function mobileblock_content_dynamic_lirr(){
 	$js = 'jQuery(document).ready(function($) {
   //On Window Load
   $( window ).load(function() {
-    $("#mobile-blocks-servicestatus").html(\'<div id="block-servicestatus-mta-service-status" class="roundCorners featurebox">\' + $(\'#block-servicestatus-mta-service-status\').html() + \'</div>\');
-	$("#mobile-blocks-tripplanner").html(\'<div id="block-tripplanner-tripplanner" class="block block-tripplanner">\' + $(\'#block-tripplanner-tripplanner\').html() + \'</div>\');
+    $("#mobile-blocks-servicestatus").html(\'<div class="block-heading-container">'. get_toggle_open('Service Status', 'icon-plus', 'open') .' <div id="block-servicestatus-mta-service-status" class="block-heading roundCorners featurebox open">\' + $(\'#block-servicestatus-mta-service-status\').html() + \'</div></div>\');
 	
-	$("#mobile-blocks-servicestatusnotices").html(\'<div id="block-service-notice-service-notice-lirr" class="block block-service-notice">\' + $(\'#block-service-notice-service-notice-lirr\').html() + \'</div>\');
-	$("#mobile-blocks-rotaterimage").html(\'<div id="block-views-news-rotator-block-2" class="block block-views">\' + $(\'#block-views-news-rotator-block-2\').html() + \'</div>\');
+	$("#mobile-blocks-tripplanner").html(\'<div class="block-heading-container">'. get_toggle_open('TripPlanner', 'icon-plus') .' <div id="block-tripplanner-tripplanner" class="block-heading block block-tripplanner">\' + $(\'#block-tripplanner-tripplanner\').html() + \'</div></div>\');
 	
-	$("#mobile-blocks-secondavenuesubway").html(\'<div id="block-block-1371" class="block block-block">\' + $(\'#block-block-1371\').html() + \'</div>\');
-	$("#mobile-blocks-canarsietunnelreconstruction").html(\'<div id="block-block-251" class="block block-block">\' + $(\'#block-block-251\').html() + \'</div>\');
-	$("#mobile-blocks-traveltime").html(\'<div id="block-block-1391" class="block block-block">\' + $(\'#block-block-1391\').html() + \'</div>\');
-	$("#mobile-blocks-fixfortify").html(\'<div id="block-block-1431" class="block block-block">\' + $(\'#block-block-1431\').html() + \'</div>\');
-	$("#mobile-blocks-b711").html(\'<div id="block-block-711" class="block block-block">\' + $(\'#block-block-711\').html() + \'</div>\');
+	$("#mobile-blocks-servicestatusnotices").html(\'<div class="block-heading-container">'. get_toggle_open('Special Service Notices', 'icon-plus') .' <div id="block-service-notice-service-notice-lirr" class="block-heading block block-service-notice">\' + $(\'#block-service-notice-service-notice-lirr\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-rotaterimage").html(\'<div class="block-heading-container">'. get_toggle_open('Rotator', 'icon-plus') .' <div id="block-views-news-rotator-block-2" class="block-heading block block-views">\' + $(\'#block-views-news-rotator-block-2\').html() + \'</div>\');
+	
+	$("#mobile-blocks-secondavenuesubway").html(\'<div class="block-heading-container">'. get_toggle_open('MTA Tix', 'icon-plus') .' <div id="block-block-1371" class="block-heading block block-block">\' + $(\'#block-block-1371\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-canarsietunnelreconstruction").html(\'<div class="block-heading-container">'. get_toggle_open('Ways to Pay', 'icon-plus') .' <div id="block-block-251" class="block-heading block block-block">\' + $(\'#block-block-251\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-traveltime").html(\'<div class="block-heading-container">'. get_toggle_open('Your Sport, Your Team, Your LIRR', 'icon-plus') .' <div id="block-block-1391" class="block-heading block block-block">\' + $(\'#block-block-1391\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-fixfortify").html(\'<div class="block-heading-container">'. get_toggle_open('My MTA Alerts®', 'icon-plus') .' <div id="block-block-1431" class="block-heading block block-block">\' + $(\'#block-block-1431\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-b711").html(\'<div class="block-heading-container">'. get_toggle_open('Train Time', 'icon-plus') .' <div id="block-block-711" class="block-heading block block-block">\' + $(\'#block-block-711\').html() + \'</div></div>\');
+	
+	$( ".block-toogle-heading" ).click(function() {
+	  $(this).next( ".block-heading" ).toggle("slow");
+	  $(this).toggleClass("open");
+	  $(this).find(".title").toggle();
+	  
+	  $(this).find(".toggle-sign").toggleClass("open");
+	  $(this).find(".toggle-sign").find(".icon").toggleClass("icon-plus");
+	  $(this).find(".toggle-sign").find(".icon").toggleClass("icon-minus");
+	});
   });
 });';
   drupal_add_js($js, 'inline');
@@ -230,17 +281,36 @@ function mobileblock_content_dynamic_nyct(){
 	$js = 'jQuery(document).ready(function($) {
   //On Window Load
   $( window ).load(function() {
-    $("#mobile-blocks-servicestatus").html(\'<div id="block-servicestatus-mta-service-status" class="roundCorners featurebox">\' + $(\'#block-servicestatus-mta-service-status\').html() + \'</div>\');
-	$("#mobile-blocks-tripplanner").html(\'<div id="block-tripplanner-tripplanner" class="block block-tripplanner">\' + $(\'#block-tripplanner-tripplanner\').html() + \'</div>\');
-	$("#mobile-blocks-servicestatusnotices").html(\'<div id="block-service-notice-service-notice-nyct" class="block block-service-notice">\' + $(\'#block-service-notice-service-notice-nyct\').html() + \'</div>\');
-	$("#mobile-blocks-specialservicenoties1").html(\'<div id="block-block-521" class="block block-block">\' + $(\'#block-block-521\').html() + \'</div>\');
-	$("#mobile-blocks-rotaterimage").html(\'<div id="block-views-news-rotator-block-5" class="block block-views">\' + $(\'#block-views-news-rotator-block-5\').html() + \'</div>\');
+    $("#mobile-blocks-servicestatus").html(\'<div class="block-heading-container">'. get_toggle_open('Service Status', 'icon-plus' , 'open' ) .' <div id="block-servicestatus-mta-service-status" class="block-heading  roundCorners featurebox open">\' + $(\'#block-servicestatus-mta-service-status\').html() + \'</div></div>\');
 	
-	$("#mobile-blocks-secondavenuesubway").html(\'<div id="block-block-1466" class="block block-block">\' + $(\'#block-block-1466\').html() + \'</div>\');
-	$("#mobile-blocks-canarsietunnelreconstruction").html(\'<div id="block-block-1486" class="block block-block">\' + $(\'#block-block-1486\').html() + \'</div>\');
-	$("#mobile-blocks-traveltime").html(\'<div id="block-block-231" class="block block-block">\' + $(\'#block-block-231\').html() + \'</div>\');
-	$("#mobile-blocks-fixfortify").html(\'<div id="block-block-456" class="block block-block">\' + $(\'#block-block-456\').html() + \'</div>\');
-	$("#mobile-blocks-advertisewithus").html(\'<div id="block-block-396" class="block block-block">\' + $(\'#block-block-396\').html() + \'</div>\');
+	$("#mobile-blocks-tripplanner").html(\'<div class="block-heading-container">'. get_toggle_open('TripPlanner', 'icon-plus') .' <div id="block-tripplanner-tripplanner" class="block-heading  block block-tripplanner">\' + $(\'#block-tripplanner-tripplanner\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-servicestatusnotices").html(\'<div class="block-heading-container">'. get_toggle_open('Special Service Notices', 'icon-plus') .' <div id="block-service-notice-service-notice-nyct" class="block-heading  block block-service-notice">\' + $(\'#block-service-notice-service-notice-nyct\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-specialservicenoties1").html(\'<div class="block-heading-container">'. get_toggle_open('Special Service Notices & Fasttrack', 'icon-plus') .' <div id="block-block-521" class="block-heading  block block-block">\' + $(\'#block-block-521\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-rotaterimage").html(\'<div class="block-heading-container">'. get_toggle_open('Rotator', 'icon-plus') .' <div id="block-views-news-rotator-block-5" class="block-heading  block block-views">\' + $(\'#block-views-news-rotator-block-5\').html() + \'</div></div>\');
+	
+	//$("#mobile-blocks-secondavenuesubway").html(\'<div class="block-heading-container">'. get_toggle_open('Second Avenue Subway ', 'icon-plus') .' <div id="block-block-1466" class="block-heading  block block-block">\' + $(\'#block-block-1466\').html() + \'</div></div>\');
+	
+	//$("#mobile-blocks-canarsietunnelreconstruction").html(\'<div class="block-heading-container">'. get_toggle_open('Canarsie Tunnel Reconstruction', 'icon-plus') .' <div id="block-block-1486" class="block-heading  block block-block">\' + $(\'#block-block-1486\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-traveltime").html(\'<div class="block-heading-container">'. get_toggle_open('Travel Time', 'icon-plus') .' <div id="block-block-231" class="block-heading  block block-block">\' + $(\'#block-block-231\').html() + \'</div></div>\');
+	
+	//$("#mobile-blocks-fixfortify").html(\'<div class="block-heading-container">'. get_toggle_open('Fix&Fortify', 'icon-plus') .' <div id="block-block-456" class="block-heading  block block-block">\' + $(\'#block-block-456\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-advertisewithus").html(\'<div class="block-heading-container">'. get_toggle_open('Advertise with Us', 'icon-plus') .' <div id="block-block-396" class="block-heading  block block-block">\' + $(\'#block-block-396\').html() + \'</div></div>\');
+	
+	$( ".block-toogle-heading" ).click(function() {
+	  $(this).next( ".block-heading" ).toggle("slow");
+	  $(this).toggleClass("open");
+	  $(this).find(".title").toggle();
+	  
+	  $(this).find(".toggle-sign").toggleClass("open");
+	  $(this).find(".toggle-sign").find(".icon").toggleClass("icon-plus");
+	  $(this).find(".toggle-sign").find(".icon").toggleClass("icon-minus");
+	});
+	
   });
 });';
   drupal_add_js($js, 'inline');
@@ -251,16 +321,45 @@ function mobileblock_content_dynamic_home(){
 	$js = 'jQuery(document).ready(function($) {
   //On Window Load
   $( window ).load(function() {
-    $("#mobile-blocks-servicestatus").html(\'<div id="block-servicestatus-mta-service-status" class="roundCorners featurebox">\' + $(\'#block-servicestatus-mta-service-status\').html() + \'</div>\');
-	$("#mobile-blocks-tripplanner").html(\'<div id="block-tripplanner-tripplanner" class="block block-tripplanner">\' + $(\'#block-tripplanner-tripplanner\').html() + \'</div>\');
-	$("#mobile-blocks-rotaterimage").html(\'<div id="block-views-news-rotator-block-1" class="block block-views contextual-links-region">\' + $(\'#block-views-news-rotator-block-1\').html() + \'</div>\');
-	$("#mobile-blocks-traveltime").html(\'<div id="block-block-156" class="block block-block contextual-links-region">\' + $(\'#block-block-156\').html() + \'</div>\');
-	$("#mobile-blocks-mymtaalerts").html(\'<div id="block-block-1426" class="block block-block contextual-links-region">\' + $(\'#block-block-1426\').html() + \'</div>\');
-	$("#mobile-blocks-appcenter").html(\'<div id="block-block-381" class="block block-block contextual-links-region">\' + $(\'#block-block-381\').html() + \'</div>\');
+    $("#mobile-blocks-servicestatus").html(\' <div class="block-heading-container">'. get_toggle_open('Service Status', 'icon-plus', 'open') .' <div id="block-servicestatus-mta-service-status" class="block-heading roundCorners featurebox open">\' + $(\'#block-servicestatus-mta-service-status\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-tripplanner").html(\' <div class="block-heading-container">'. get_toggle_open('TripPlanner', 'icon-plus') .'<div id="block-tripplanner-tripplanner" class="block-heading block block-tripplanner">\' + $(\'#block-tripplanner-tripplanner\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-rotaterimage").html(\'<div class="block-heading-container">'. get_toggle_open('Rotator' , 'icon-plus') .' <div id="block-views-news-rotator-block-1" class="block-heading block block-views contextual-links-region">\' + $(\'#block-views-news-rotator-block-1\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-traveltime").html(\'<div class="block-heading-container">'. get_toggle_open('Travel Time ', 'icon-plus') .' <div id="block-block-156" class="block-heading block block-block contextual-links-region">\' + $(\'#block-block-156\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-mymtaalerts").html(\'<div class="block-heading-container">'. get_toggle_open('MTA Alerts', 'icon-plus') .' <div id="block-block-1426" class="block-heading block block-block contextual-links-region">\' + $(\'#block-block-1426\').html() + \'</div></div>\');
+	
+	$("#mobile-blocks-appcenter").html(\'<div class="block-heading-container">'. get_toggle_open('App Center', 'icon-plus') .' <div id="block-block-381" class="block-heading block block-block contextual-links-region">\' + $(\'#block-block-381\').html() + \'</div></div>\');
+	
+	$( ".block-toogle-heading" ).click(function() {
+	  $(this).next( ".block-heading" ).toggle("slow");
+	  $(this).toggleClass("open");
+	  $(this).find(".title").toggle();
+	  
+	  $(this).find(".toggle-sign").toggleClass("open");
+	  $(this).find(".toggle-sign").find(".icon").toggleClass("icon-plus");
+	  $(this).find(".toggle-sign").find(".icon").toggleClass("icon-minus");
+	});
   });
 });';
   drupal_add_js($js, 'inline');
 
 
+}
+
+
+function get_toggle_open($title, $class, $op = 'close'){
+	if(!empty($op) && $op == 'open'){
+		$output = '<div class="block-toogle-heading toogle-open"><div class="title">' . $title . ' </div><div class="toggle-sign open"><div class="icon icon-minus">&nbsp;</div></div></div>';
+	} else {
+		$output = '<div class="block-toogle-heading "><div class="title">' . $title . ' </div><div class="toggle-sign open"><div class="icon ' . $class . '">&nbsp;</div></div></div>';
+	}
+		
+	
+
+return $output;
+	
 }
 //

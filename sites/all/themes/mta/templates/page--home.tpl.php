@@ -16,7 +16,11 @@
 			 </div>
 			<div id="navbar"><?php //print render($page['navbar']);?>
 				<nav id="main-menu"  role="navigation">
-					<a class="nav-toggle" href="#"><?php print t("Menu"); ?> &#8801;</a>
+					<a class="nav-toggle nav-left" href="#"><?php print t("Menu"); ?> &#8801;</a>
+					<a class="nav-right slide-menu-open" href="#"><?php print t("Tools For Your Ride"); ?> <!--<i class="arr-right"></i>--> </a>
+					
+				
+
 					<div class="menu-navigation-container">
 					  <?php
 					  if (module_exists('i18n_menu')) {
@@ -30,7 +34,22 @@
 					</div>
 					<div class="clear"></div>
 				  </nav>
-				
+				  
+				    
+                    <!--Tools For Your Ride-->
+					<div class="side-menu-overlay" style="width: 0px; opacity: 0;"></div>
+					<div class="side-menu-wrapper">
+						<a href="#" class="menu-close"><?php print t("Tools For Your Ride"); ?>  &times;</a>
+						<?php 
+					    $menu_tree = menu_tree_all_data('menu-mobile-menu');
+						
+						$main_mn = menu_tree_output($menu_tree);
+						//print_r($main_mn);die;
+						//var_dump(drupal_render($main_mn));
+						print drupal_render($main_mn);
+?>
+						
+					</div>
 				</div>
 			
 			<a name="main-content"></a>

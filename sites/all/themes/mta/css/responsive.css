@@ -2,7 +2,8 @@
 .mobile{}
 .mobile .slicknav_menu, .mobile #block-gtranslate-gtranslate, .mobile #block-block-31, .mobile #block-google-adsense-google-adsense-horizontal{display:none!important;}
 
-.mobile .slicknav_menu, .mobile #block-gtranslate-gtranslate, .mobile #block-block-31, .mobile #block-google-adsense-google-adsense-horizontal, .mobile #block-menu-menu-topbar-links, .mobile #block-block-1351, .mobile #block-block-761, .mobile #block-block-376, .mobile #block-block-1311, .mobile #block-block-1491 , .mobile #block-block-1466 , .mobile #block-block-956 , .mobile #block-block-1346 .mobile #block-block-1481{display:none!important;}
+/*.mobile .slicknav_menu, .mobile #block-gtranslate-gtranslate, .mobile #block-block-31, .mobile #block-google-adsense-google-adsense-horizontal, .mobile #block-menu-menu-topbar-links, .mobile #block-block-1351, .mobile #block-block-761, .mobile #block-block-376, .mobile #block-block-1311, .mobile #block-block-1491 , .mobile #block-block-1466 , .mobile #block-block-956 , .mobile #block-block-1346 .mobile #block-block-1481{display:none!important;}
+	*/
 
 .mobile #page, .mobile #mainbox {
   position:relative;
@@ -17,6 +18,7 @@
 }
 .mobile #block-servicestatus-mta-service-status {
 	height:auto;
+	width:98%
 }
 .mobile #sidebar_first{width:100%;float:left;}
 
@@ -29,6 +31,7 @@
 	width: 180px;
 	height: 38px;
 	cursor:pointer;
+	display:none!important;
 }
 .mobile #riding-links #nestedCol1, .mobile #riding-links #nestedCol2{width:100%;clear:both;float:none;}
 .mobile #riding-links{min-height:250px}
@@ -37,10 +40,10 @@
 .mobile #block-block-16 #centerRow .wrapper{width:96%!important;}
 .mobile #block-block-16 #centerRow .wrapper div{width:96%!important;float:left;}
 .mobile #news_rotator_archive, .mobile #news_rotator_more{float:left;clear:both;margin-right:10px;margin-left:10px;}
-.mobile #mobile-blocks-rotaterimage .block-views{width:90%; padding-bottom:90px;}
-#mobile-blocks-rotaterimage .block-views img{ width:90%!important;}
-.mobile #mobile-blocks-rotaterimage .news-rot-image-caption{width:90%;}
-
+.mobile #mobile-blocks-rotaterimage .block-views{width:88%; padding-bottom:90px;}
+#mobile-blocks-rotaterimage .block-views img{ width:88%!important;}
+.mobile #mobile-blocks-rotaterimage .news-rot-image-caption{width:88%;}
+.mobile .nav-right{display:block}
 
 .tablet{}
 .tablet .slicknav_menu, .tablet #block-gtranslate-gtranslate, .tablet #block-block-31, .tablet #block-google-adsense-google-adsense-horizontal, .tablet #block-menu-menu-topbar-links, .tablet #block-block-1351, .tablet #block-block-761, .tablet #block-block-376, .tablet #block-block-1311, .tablet #block-block-1491 , .tablet #block-block-1466 , .tablet #block-block-956 , .tablet #block-block-1346 .tablet #block-block-1481{display:none!important;}
@@ -75,8 +78,14 @@
 .mobile .mobile-apply {display:none!important;}
 .tablet .mobile-apply {display:none!important;}
 .desktop .mobile-apply {display:block!important;}
+.tablet .nav-right, .desktop .nav-right{display:none!important;}
 
 
+.mobile  .menu .leaf, .mobile  .menu .last, .mobile  .menu .first a{display:none!important;}
+.mobile  .menu .first .menu .leaf , .mobile  .menu .first .menu .last, .mobile  .menu .first .menu, .mobile  .menu .first .menu a{display:block!important;}
+
+
+	
 @media screen and (max-width: 1152px) {
 
  
@@ -175,6 +184,7 @@
   #main-menu li {
   float:none;
   max-width:100%;
+  clear:both;
   }
 
   #main-menu a {
@@ -227,6 +237,19 @@
 	  line-height:40px;
 	  text-align: left;
 	  padding-left: 10px;
+	  float:left;
+	  width:34%;
+}
+
+#main-menu .nav-right {
+	  display:block;
+	  font-size:15px;
+	  font-weight:700;
+	  line-height:40px;
+	  text-align: right;
+	  padding-right: 10px;
+	  float:right;
+	  width:58%;
 }
   }
 
@@ -427,3 +450,187 @@ body.two-sidebars #sidebar-first {
  
 
 }
+
+
+.mobile #mobile-blocks .block-statusblock, .mobile #mobile-blocks .roundCorners, .mobile #mobile-blocks .block-views, .mobile #mobile-blocks .block-block{border:0px}
+.mobile #mobile-blocks .block-block{margin-top:10px;border-radius:5px;width:92%}
+
+/* RESPONSIVE ARROWS */
+[class^=arr-]{
+  border:       solid currentColor;
+  border-width: 0 .2em .2em 0;
+  display:      inline-block;
+  padding:      .20em;
+}
+
+.icon {
+position: relative;
+width:16px;
+height:16px;
+}
+.icon .name {
+width: 32px;
+position: absolute;
+text-align: center;
+top: 18px;
+left: -8px;
+}
+
+.icon-minus {
+
+width: 16px!important;
+height: 16px;
+background:url('../images/minus.png');
+}
+
+.icon-plus {
+
+width: 16px!important;
+height: 16px;
+background:url('../images/plus.png');
+}
+.arr-right {transform:rotate(-45deg);  -webkit-transform:rotate(-45deg);}
+.arr-left  {transform:rotate(135deg);  -webkit-transform:rotate(135deg);}
+.arr-up    {transform:rotate(-135deg); -webkit-transform:rotate(-135deg);}
+.arr-down  {transform:rotate(45deg);   -webkit-transform:rotate(45deg);}
+
+.block-heading-container{}
+.block-heading-container{border: 9px solid #1C57B3;margin-bottom:10px;}
+
+.block-heading-container .block-heading{display:none;}
+.block-heading-container .block-heading.open{display:block;}
+
+.block-heading-container .block-toogle-heading{background:#1C57B3;color:#FFF;
+padding-bottom: 20px;cursor:pointer;}
+
+.block-heading-container .block-toogle-heading .toggle-sign{width:5%;float:right;margin-right: 15px;}
+.block-heading-container .block-toogle-heading .title{float:left;padding-left:5px;font-size: 13px;
+font-weight: 700;float:left;width:80%}
+
+.block-heading-container .block-toogle-heading  .icon-minus{float:right;width:30%}
+.block-heading-container .block-toogle-heading  .icon-plus{float:right;width:30%}
+.block-heading-container .busCategory {float:right;}
+
+
+.block-heading-container .block-toogle-heading .roundCorners {
+    border: 0;
+}
+
+
+.side-menu-wrapper { /* style menu wrapper */
+    overflow: hidden;
+    background: rgba(0,0,0,.95);
+    /*padding: 40px 0 0 40px;*/
+	padding: 20px 0 0 0px;
+	margin-bottom:10px;
+    position: fixed; /* Fixed position */
+    top: 0;
+    right: -290px; /* Sidebar initial position. "right" for right positioned menu */
+    height: 100%;
+    z-index: 2;
+    transition: 0.5s; /* CSS transition speed */
+    width: 250px;
+	
+}
+.side-menu-wrapper > ul{ /* css ul list style */
+    list-style:none;
+    padding:0;
+    margin:0;
+    overflow-y: auto; /* enable scroll for menu items */
+    width:500px; /* this width will hide scroll bar */
+    height:95%;
+	display:block!important;
+}
+
+.mobile .side-menu-wrapper > ul.menu > li , .mobile .side-menu-wrapper > ul.menu > li.first, .mobile .side-menu-wrapper > ul.menu > li.first a, .mobile .side-menu-wrapper > ul.menu > li a {
+	display:block!important;	
+}
+
+.side-menu-wrapper > ul > li {
+list-style:none;
+
+	
+}
+
+.side-menu-wrapper > ul > li > a { /* links */
+    display: block;
+    border-bottom: 1px solid #131313;
+    padding: 6px 4px 6px 4px;
+    color: #FFF;
+    transition: 0.3s;
+    text-decoration: none;
+	font-weight: 700;
+	line-height: 18px;
+	background: #555;
+    border-top: #5f5f5f 1px solid;
+}
+.side-menu-wrapper > ul > li > a:hover { /* links */
+   background:#444;
+}
+
+.side-menu-wrapper > a.menu-close { /* close button */
+    /*padding: 8px 0 4px 23px;
+	margin: -30px 0 -10px -20px;*/
+    color: #FFF;
+    display: block;
+    padding: 0px 0 0px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom:10px;
+    font-weight: bold;
+}
+
+.side-menu-overlay { /* overlay */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.mobile #block-block-1466 img{width:100%!important;}
+.mobile #block-block-1466 .arrow img{width:auto!important;}
+.mobile #block-block-1371{}
+.mobile #block-block-1371 .span-42{width:95%;}
+.mobile #block-block-1371 .span-42 p img{width:70%!important;}
+.mobile #block-block-1371 .banner{width:240px!important;}
+
+
+.tablet #block-block-1466 img{width:100%!important;}
+.tablet #block-block-1466 .arrow img{width:auto!important;}
+.tablet #block-block-1371{}
+.tablet #block-block-1371 .span-42{width:95%;}
+.tablet #block-block-1371 .span-42 p img{width:70%!important;}
+.tablet #block-block-1371 .banner{width:240px!important;}
+
+
+.mobile #block-block-1431 .span-22  div{float:none!important;}
+.tablet #block-block-1431 .span-22  div{float:none!important;}
+
+.mobile #block-block-711 .span-22 {float:none!important;}
+.tablet #block-block-711 .span-22 {float:none!important;}
+
+.mobile #block-block-706 .span-22 {float:none!important;}
+.tablet #block-block-706 .span-22 {float:none!important;}
+
+.mobile #block-block-1376 .span-42{width:95%;}
+.mobile #block-block-1376 .span-42 p img{width:70%!important;}
+.mobile #block-block-1376 .banner{width:240px!important;}
+
+.tablet #block-block-1376 .span-42{width:95%;}
+.tablet #block-block-1376 .span-42 p img{width:70%!important;}
+.tablet #block-block-1376 .banner{width:240px!important;}
+
+
+ .mobile .column, .mobile  .span-1, .mobile  .span-2, .mobile  .span-3, .mobile  .span-4, .mobile  .span-5, .mobile  .span-6, .mobile  .span-7, .mobile  .span-8, .mobile  .span-9, .mobile  .span-10, .mobile  .span-11, .mobile  .span-12, .mobile  .span-13, .mobile  .span-14, .mobile  .span-15, .mobile  .span-16, .mobile  .span-17, .mobile  .span-18, .mobile  .span-19, .mobile  .span-20, .mobile  .span-21, .mobile  .span-22, .mobile  .span-23, .mobile  .span-24, .mobile  .span-25, .mobile  .span-26, .mobile  .span-27, .mobile  .span-28, .mobile  .span-29, .mobile  .span-30, .mobile  .span-31, .mobile  .span-32, .mobile  .span-33, .mobile  .span-34, .mobile  .span-35, .mobile  .span-36, .mobile  .span-37, .mobile  .span-38, .mobile  .span-39, .mobile  .span-40, .mobile  .span-41, .mobile  .span-42, .mobile  .span-43, .mobile  .span-44, .mobile  .span-45, .mobile  .span-46, .mobile  .span-47, .mobile  .span-48, .mobile  .span-49, .mobile  .span-50, .mobile  .span-51, .mobile  .span-52, .mobile  .span-53, .mobile  .span-54, .mobile  .span-55, .mobile  .span-56, .mobile  .span-57, .mobile  .span-58, .mobile  .span-59, .mobile  .span-60, .mobile  .span-61, .mobile  .span-62, .mobile  .span-63, .mobile  .span-64, .mobile  .span-65, .mobile  .span-66, .mobile  .span-67, .mobile  .span-68, .mobile  .span-69, .mobile  .span-70, .mobile  .span-71, .mobile  .span-72, .mobile  .span-73, .mobile  .span-74, .mobile  .span-75, .mobile  .span-76, .mobile  .span-77, .mobile  .span-78, .mobile  .span-79, .mobile  .span-80, .mobile  .span-81, .mobile  .span-82, .mobile  .span-83, .mobile  .span-84, .mobile  .span-85, .mobile  .span-86, .mobile  .span-87, .mobile  .span-88, .mobile  .span-89, .mobile  .span-90, .mobile  .span-91, .mobile  .span-92, .mobile  .span-93, .mobile  .span-94, .mobile  .span-95, .mobile  .span-96 { float:none}
+
+  .tablet .column, .tablet  .span-1, .tablet  .span-2, .tablet  .span-3, .tablet  .span-4, .tablet  .span-5, .tablet  .span-6, .tablet  .span-7, .tablet  .span-8, .tablet  .span-9, .tablet  .span-10, .tablet  .span-11, .tablet  .span-12, .tablet  .span-13, .tablet  .span-14, .tablet  .span-15, .tablet  .span-16, .tablet  .span-17, .tablet  .span-18, .tablet  .span-19, .tablet  .span-20, .tablet  .span-21, .tablet  .span-22, .tablet  .span-23, .tablet  .span-24, .tablet  .span-25, .tablet  .span-26, .tablet  .span-27, .tablet  .span-28, .tablet  .span-29, .tablet  .span-30, .tablet  .span-31, .tablet  .span-32, .tablet  .span-33, .tablet  .span-34, .tablet  .span-35, .tablet  .span-36, .tablet  .span-37, .tablet  .span-38, .tablet  .span-39, .tablet  .span-40, .tablet  .span-41, .tablet  .span-42, .tablet  .span-43, .tablet  .span-44, .tablet  .span-45, .tablet  .span-46, .tablet  .span-47, .tablet  .span-48, .tablet  .span-49, .tablet  .span-50, .tablet  .span-51, .tablet  .span-52, .tablet  .span-53, .tablet  .span-54, .tablet  .span-55, .tablet  .span-56, .tablet  .span-57, .tablet  .span-58, .tablet  .span-59, .tablet  .span-60, .tablet  .span-61, .tablet  .span-62, .tablet  .span-63, .tablet  .span-64, .tablet  .span-65, .tablet  .span-66, .tablet  .span-67, .tablet  .span-68, .tablet  .span-69, .tablet  .span-70, .tablet  .span-71, .tablet  .span-72, .tablet  .span-73, .tablet  .span-74, .tablet  .span-75, .tablet  .span-76, .tablet  .span-77, .tablet  .span-78, .tablet  .span-79, .tablet  .span-80, .tablet  .span-81, .tablet  .span-82, .tablet  .span-83, .tablet  .span-84, .tablet  .span-85, .tablet  .span-86, .tablet  .span-87, .tablet  .span-88, .tablet  .span-89, .tablet  .span-90, .tablet  .span-91, .tablet  .span-92, .tablet  .span-93, .tablet  .span-94, .tablet  .span-95, .tablet  .span-96 { float:none}
+
+ .toogle-open .title{display:none;}
+.block-heading.open {display:block;}
